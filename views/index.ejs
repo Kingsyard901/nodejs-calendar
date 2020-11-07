@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Planera Personal</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
 
     <header>
-        <h1>welcome to my calendar</h1>
+        <h1>Planera frånvaro & ersättare</h1>
 
         <form action="/" method="get">
-            <input type="text" placeholder="search year" name="year">
-            <button type="submit">search</button>
+            <input type="text" placeholder="Ange år" name="year">
+            <button div class="button" type="submit">Öppna år</button>
         </form>
 
-        <h2>year <%= year %></h2>
+        <h2 div class="small-title">År <%= year %></h2>
     </header>
 
 
@@ -30,8 +30,8 @@
 
 
             <div class="day-of-week">
-                <span>Sun</span><span>Mon</span><span>Tue</span><span>
-                    Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                <span>Sön</span><span>Mån</span><span>Tis</span><span>
+                    Ons</span><span>Tor</span><span>Fre</span><span>Lör</span>
             </div>
             <% for(let x = 0;x < calendar[month].length;x++) { %>
             <div class="days">
